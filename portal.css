@@ -1,0 +1,12 @@
+a{ background-color: lightblue; 
+    color:rgb(71, 68, 69);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+#primary {
+    background-color: aqua;
+}
+.background {
+    background-color: azure;
+}
