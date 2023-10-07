@@ -1,12 +1,52 @@
-a{ background-color: lightblue; 
+* {
+    border: 1px solid black;
+}
+a{ 
+    background-color: lightblue; 
     color:rgb(71, 68, 69);
     text-decoration: none;
     padding: 10px;
     margin: 5px;
+    text-align: center;
+}
+a:hover {
+    background-color: gray;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+h3 {
+    background-color: rgb(141, 215, 215);
+    font-size: 1.5em;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+}
+p {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
 }
 #primary {
     background-color: aqua;
 }
+
 .background {
     background-color: azure;
+}
+footer {
+    background-color: antiquewhite;
+    color: rgb(71, 68, 69);
 }
