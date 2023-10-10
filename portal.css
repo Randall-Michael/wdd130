@@ -1,6 +1,10 @@
 * {
     border: 1px solid black;
 }
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@500&display=swap');
+body {
+    font-family: Acme, Cormorant Garamond;
+}
 a{ 
     background-color: lightblue; 
     color:rgb(71, 68, 69);
