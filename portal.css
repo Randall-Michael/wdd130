@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Cormorant+Garamond:wght@500&display=swap');
 * {
     border: 1px solid black;
 }
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@500&display=swap');
 body {
-    font-family: "Acme", "Cormorant-Garamond";
+    font-family: "Cormorant Garamond","Autour One";
 }
 a{ 
     background-color: lightblue; 
@@ -20,6 +20,7 @@ a:hover {
 nav {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 h1 {
     font-size: 3em;
@@ -29,7 +30,11 @@ img {
     width: 400px;
     display: block;
     margin: 0 auto;
+    border: 3px solid black;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 h3 {
     background-color: rgb(141, 215, 215);
     font-size: 1.5em;
@@ -37,11 +42,14 @@ h3 {
     width: 50%;
     margin: 20px auto;
     padding: 15px;
+    box-sizing: border-box;
 }
 p {
+    /*text-align: center;*/
     width: 80%;
     margin: 20px auto;
     padding: 10px;
+    box-sizing: border-box;
 }
 #primary {
     background-color: aqua;

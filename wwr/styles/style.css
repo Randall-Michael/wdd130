@@ -1,31 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@500&display=swap');
 #content {
     max-width: 1600px;
     margin: 0 auto;
-  }
-    nav a { 
+}
+nav a { 
     text-align: center;
     color: #F5C10A;
     text-decoration: none;
-    }  
-    .home-title h4 {
-        color: grey;
-    }
-    #hero-img {
-        border: 5px solid black;
-        width: 100%;
-    }
-    .logo {
-        width: 80px;
-    }
-    .icon {
-        width: 50px;
-    }
-  #hero-msg h1 {
-    text-align: center;
-  }
-  #hero-msg h4 {
-    text-align: center;
-  }
+    padding: 35px;
+ }  
+ .home-title h1 {
+    font-family: "Cormorant Garamond", "Acme";
+    margin-top: 10px;
+ }
+.sub-title h4 {
+    color: grey;
+    font-family: "Acme", "Cormorant Garamond";
+    font-size: 2em;
+}
+#hero-img {
+ border: 5px solid black;
+ border-radius: 5px;
+width: 100%;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.logo {
+ width: 80px;
+}
+.icon {
+ width: 50px;
+}
+#hero-msg h1 {
+   text-align: center;
+}
+#hero-msg h4 {
+ text-align: center;
+}
   .button-box {
     text-align: center;
   }
@@ -35,14 +47,24 @@
   #background {
     height: 725px;
   }
+  h2 {
+   margin: 0;
+  }
   .card-img {
     border: 10px solid white;
+    margin-top: 10px;
+}
+.river-card {
+    margin: 200px 0;
+}
+.camping-card {
+    margin: 200px 0;
+}
+.rapids-card {
+    margin: 200px 0;
 }
 .mountains {
     border: 5px solid black;
-}
-body {
-    background-color: #66b2cc;
 }
 header {
     background-color: white ;
@@ -54,27 +76,46 @@ nav a:hover {
     background-color: #66b2cc;
     color: blue;
     border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
     text-decoration: none;
+    padding: 5px 30px;
+    margin-top: 50px;
 }
 .book:hover, .join:hover{
     background-color: yellow;
     color: black;
+}
+main section img {
+    box-sizing: border-box;
+}
+body {
+    background-color: #66b2cc;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 #background {
     background-color: black;
 }
 .msg {
     background-color: white;
+    line-height: 1.5;
+    padding: 35px;
 }
 .msg h2 {
     color: black;
 }
 .msg p {
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: white;
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -83,6 +124,9 @@ footer a {
     background-color: white;
     color: blue;
     text-decoration: none;
+}
+footer .social {
+    padding-top: 15px;
 }
 footer a:hover {
     background-color: grey;
