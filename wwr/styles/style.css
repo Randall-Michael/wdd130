@@ -8,6 +8,10 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
+nav {
+    display: flex;
+    justify-content: space-around;
+}
 nav a { 
     text-align: center;
     color: #F5C10A;
