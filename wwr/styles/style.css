@@ -3,6 +3,11 @@
     max-width: 1600px;
     margin: 0 auto;
 }
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
 nav a { 
     text-align: center;
     color: #F5C10A;
@@ -10,7 +15,7 @@ nav a {
     padding: 35px;
  }  
  .home-title h1 {
-    font-family: "Cormorant Garamond", "Acme";
+    font-family: 'Cormorant Garamond', 'Acme';
     margin-top: 10px;
  }
 .sub-title h4 {
@@ -65,9 +70,6 @@ width: 100%;
 }
 .mountains {
     border: 5px solid black;
-}
-header {
-    background-color: white ;
 }
 nav a:hover {
     background-color: grey;
