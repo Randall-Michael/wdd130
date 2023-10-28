@@ -40,7 +40,7 @@ nav a {
 #hero-img {
  border: 5px solid black;
  border-radius: 5px;
-width: 100%;
+ width: 100%;
 }
 #hero-msg {
     grid-column: 2/3;
@@ -76,6 +76,10 @@ width: 100%;
   h2 {
    margin: 0;
   }
+  .home-grid{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr) ;
+  }
   .card-img {
     border: 10px solid white;
     margin-top: 10px;
@@ -83,14 +87,12 @@ width: 100%;
 }
 .river-card {
     margin: 200px 0;
-    display: grid;
     grid-column: 2/4;
     grid-row: 2/3;
 
 }
 .camping-card {
     margin: 200px 0;
-    display: grid;
     grid-column: 5/7;
     grid-row: 2/3;
 }
