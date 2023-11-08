@@ -219,13 +219,156 @@ footer p a:hover {
         margin: 50px auto;
         width: 60%;
     }
-    #background {
+    #backgrounds {
         display: none;
     }
     .mountains, .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+/* FAQ page starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@500&display=swap');
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a { 
+    text-align: center;
+    color: #F5C10A;
+    text-decoration: none;
+    padding: 35px;
+ }  
+ .faq-title h1 {
+    font-family: 'Cormorant Garamond', 'Acme';
+    margin-top: 10px;
+    text-align: center;
+    font-size: 4em;
+ }
+ #logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+ width: 80px;
+}
+.faq {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.faq li {
+    background: white;
+    border-bottom: 1px #ccc solid;
+}
+.faq li:first-child {
+    border-top: 1px #ccc solid;
+}
+.q {
+    padding: 1em 0;
+    border-left: 10px white solid;
+    cursor: pointer;
+}
+.q:hover, 
+.q:hover .arrow {
+    border-left-color: #6f7364;
+}
+.arrow {
+    display: inline-block;
+    margin: 0 .5em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid white;
+    border-bottom: 6px solid transparent;
+    transition: .3s;
+}
+.faq p {
+    color: black;
+    line-height: 25px;
+}
+.a {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+}
+.a-opened {
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+.arrow-rotated {
+    transform: rotate(90deg);
+}
+
+.join {
+    background-color: #66b2cc;
+    color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-top: 50px;
+}
+.join:hover{
+    background-color: yellow;
+    color: black;
+}
+#background {
+    background-color: black;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+footer {
+    background-color: white;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer a {
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+}
+footer .social {
+    padding-top: 15px;
+}
+footer a:hover {
+    background-color: grey;
+    color: white;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
     }
     footer {
         margin-top: 25px;
