@@ -19,87 +19,90 @@
             <a href="contactus.html">Contact Us</a>
         </nav>
     </header>
-    <div id="back">
-        <div id="back-box">
-            <img id="back-img" src="#" alt="Cool Landscape canyon">
-     </div>
-     <section id="back-msg"> 
-        <h1 class="faq-title">Frequently Asked Questions</h1>
+    <div id="faq-real">
+        <div id="faq">
+        </div>
+    </div>
+    <h1 class="faq-title">Frequently Asked Questions</h1>
+    <section id="faq-msg"> 
+        <img id="faq-img" src="images/grandcanyon.jpeg" alt="Cool Landscape canyon">
         <ul class="faq">
             <li>
-              <div class="q">
+                <div class="q">
                 <span class="arrow"></span>
-                <span>Question Placeholder</span>
+                <span>What is white water rafting?</span>
               </div>
               <div class="a">
-                <p>Answer Placeholder</p>
+                <p>White water rafting is an exhilarating outdoor adventure activity that 
+                   involves navigating a river's rapids and turbulent water using an inflatable raft. 
+                   It offers a thrilling experience where participants work together as a team to paddle 
+                   through the challenges of the river, providing an adrenaline rush and an opportunity to connect with nature.</p>
               </div>
             </li>
             <li>
               <div class="q">
                 <span class="arrow"></span>
-                <span>Question Placeholder</span>
+                <span>Is white water rafting safe?</span>
               </div>
               <div class="a">
-                <p>Answer Placeholder</p>
+                <p>Yes, white water rafting can be a safe adventure when 
+                   conducted by experienced and certified rafting outfitters. 
+                   Safety is a top priority, and guides are trained to handle various situations. 
+                   Participants are provided with safety gear, and the difficulty level of the rapids is 
+                   chosen based on the group's experience and comfort level.</p>
               </div>
             </li>
             <li>
               <div class="q">
                 <span class="arrow"></span>
-                <span>Question Placeholder</span>
+                <span>What is the minimum age for rafting?</span>
               </div>
               <div class="a">
-                <p>Answer Placeholder</p>
+                <p>The minimum age for white water rafting can vary depending on the location and river's difficulty level. 
+                    Typically, children as young as 6 or 7 years old can participate in family-friendly rafting trips, 
+                    while more challenging rapids may have a higher age requirement.</p>
               </div>
             </li>
             <li>
               <div class="q">
                 <span class="arrow"></span>
-                <span>Question Placeholder</span>
+                <span>Do I need prior experience to go white water rafting?</span>
               </div>
               <div class="a">
-                <p>Answer Placeholder</p>
+                <p>No prior experience is required for white water rafting. 
+                   Rafting companies offer trips suitable for beginners, and professional guides 
+                   provide safety instructions and basic training before the adventure begins. 
+                   Even first-time rafters can enjoy the experience safely.
+                </p>
               </div>
             </li>
             <li>
               <div class="q">
                 <span class="arrow"></span>
-                <span>Question Placeholder</span>
+                <span>What is your cancellation policy?</span>
               </div>
               <div class="a">
-                <p>Answer Placeholder</p>
+                <p>Cancellation within 30 days before the scheduled trip: You will receive a full refund.
+                    Cancellation within 30 days but at least 10 days before the scheduled trip: You may receive a partial refund, and any non-refundable deposits or fees will be clearly communicated.
+                    Cancellation less than 10 days before the scheduled trip: Unfortunately, we cannot offer refunds due to the advanced preparations and arrangements required for your rafting experience.</p>
               </div>
             </li>
             <li>
               <div class="q">
                 <span class="arrow"></span>
-                <span>Question Placeholder</span>
+                <span>How do I join?</span>
               </div>
               <div class="a">
-                <p>Answer Placeholder</p>
+                <p>You can join right here, just click the button and you can join our wonderful adventures! 
+                    <a class='join' href="rivers.html">Join Us</a></p>
               </div>
             </li>
           </ul>
-        <script>
-            // JavaScript to handle the FAQ dropdown functionality
-            const q = document.querySelectorAll('.q');
-            const a = document.querySelectorAll('.a');
-            const arrow = document.querySelectorAll('.arrow');
-
-           for (let i = 0; i < q.length; i++) {
-           q[i].addEventListener('click', () => {
-           a[i].classList.toggle('a-opened');
-           arrow[i].classList.toggle('arrow-rotated');
-         });
-       }
-        </script>
      </section>
  </div>
  </main>
  <footer>
     <p>Rafting Momentum &copy; 2023 - Michael Randall</p>
-    <p><a class='join' href="rivers.html">Join Us</a></p>
     <p><a href="site-plan-rafting.html">Site Plan</a></p>
     <p><a href="contactus.html">Contact Us</a></p>
     <div class="social">
@@ -115,5 +118,27 @@
     </div>
         </footer>
     </div>
+    <script>
+        // JavaScript to handle the FAQ dropdown functionality
+        const q = document.querySelectorAll('.q');
+        const a = document.querySelectorAll('.a');
+        const arrow = document.querySelectorAll('.arrow');
+    
+        for (let i = 0; i < q.length; i++) {
+            q[i].addEventListener('click', () => {
+                // Close all sections
+                for (let j = 0; j < a.length; j++) {
+                    if (j !== i) {
+                        a[j].classList.remove('a-opened');
+                        arrow[j].classList.remove('arrow-rotated');
+                    }
+                }
+    
+                // Toggle the clicked section
+                a[i].classList.toggle('a-opened');
+                arrow[i].classList.toggle('arrow-rotated');
+            });
+        }
+    </script>
 </body>
 </html>
