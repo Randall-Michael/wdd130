@@ -211,23 +211,24 @@ nav a {
     text-decoration: none;
     padding: 35px;
  }  
- #faq.msg {
+ #faq-msg {
     display: grid;
     grid-template-columns: 1fr;
  }
 #faq-img {
+    height: 700px;
     width: 100%;
     z-index: -1;
     grid-column: 1/2;
     grid-row: 1/2;
 }
- .faq-title {
+.faq-title {
     font-family: 'Cormorant Garamond', 'Acme';
     margin-top: 10px;
     font-size: 2em;
     text-align: center; 
 }
- #logo_link {
+#logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
