@@ -81,8 +81,8 @@ nav a {
   .home-grid {
     display: grid;
     grid-template-columns: repeat(11, 1fr) ;
-  }
-  .card-img {
+ }
+.card-img {
     border: 10px solid white;
     margin-top: 10px;
     width: 100%;
@@ -305,6 +305,28 @@ nav a {
     grid-column: 1/11;
     grid-row: 4/9;
 }
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+}
+.river-cards {
+    text-align: center;
+    padding-top: 80px;
+}
+.camping-cards {
+    text-align: center;
+    padding-top: 80px;
+}
+.rapid-cards {
+    text-align: center;
+    padding-top: 80px;
+}
+.icon {
+    width: 100px;
+   }
 footer {
     background-color: white;
     color: black;
