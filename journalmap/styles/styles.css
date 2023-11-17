@@ -1,0 +1,124 @@
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a { 
+    text-align: center;
+    color: #F5C10A;
+    text-decoration: none;
+    padding: 35px;
+ }  
+ #logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+ width: 80px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+#map {
+    height: 1600px; /* Adjust the height as needed */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Style the entry form */
+#entryForm {
+    display: none;
+    margin-top: 10px;
+}
+
+/*second page css
+<style>
+        body {
+            background-image: url('path/to/your/image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0; /* Reset body margin to avoid extra spacing 
+            padding: 0;  Reset body padding to avoid extra spacing 
+        }
+
+        #container {
+            position: relative;
+        }
+        #calendar {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url('mage/wood-back.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px; 
+}
+.day {
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#entryBox {
+    display: none;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#entryText {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#addEntry, #saveEntry, #editEntryBtn {
+    display: none;
+}
+
+#currentMonth {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#displayEntry {
+    margin: 20px auto;
+    max-width: 400px;
+    display: none;
+}*/
+/*thrid page css starts here
+  #photoAlbum {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #previewContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #previewContainer img {
+            max-width: calc(33.33% - 10px); /* Adjust the width as needed 
+            max-height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }*/

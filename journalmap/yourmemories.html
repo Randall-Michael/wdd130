@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="image/The-Map-Journal-logos.jpeg" alt="Map Journal Logo">
+            </a>
+            <nav>
+                <a href="index.html">Your Map</a>
+                <img class="gps" src="image/gps.png" alt="map marker">
+                <a href="yourjournal.html">Your Journal</a>
+                <img class="journal" src="image/travel-journal.png" alt="journal">
+                <a href="yourmemories.html">Your Memories</a>
+                <img class="album" src="image/photo-al.png" alt="photo album">
+            </nav>
+        </header>
+    </div>
+    
+    <div id="photoTitle">
+        <h1>Your Memories</h1>
+    </div>
+   
+    <div id="photoAlbum">
+        <!-- Input element for selecting photos -->
+        <input type="file" id="photoInput" accept="image/*" multiple>
+        <div id="previewContainer"></div>
+    </div>
+
+    <footer>
+        <p>The Map Journal &copy; 2023 - Michael Randall</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <img class="phone" src="image/phone-cont.png" alt="phone">
+        <div id="share">
+            <p>Share With Friends</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="image/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="image/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="image/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle file input and display preview
+        const photoInput = document.getElementById('photoInput');
+        const previewContainer = document.getElementById('previewContainer');
+
+        photoInput.addEventListener('change', handleFileSelect);
+
+        function handleFileSelect(event) {
+            const files = event.target.files;
+
+            // Clear existing previews
+            previewContainer.innerHTML = '';
+
+            // Display preview for each selected file
+            for (const file of files) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.alt = 'Selected Photo';
+                    previewContainer.appendChild(img);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>

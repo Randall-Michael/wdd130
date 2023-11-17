@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Your Journal</title>
+</head>
+<body>
+    <div id="container">
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="image/The-Map-Journal-logos.jpeg" alt="Map Journal Logo">
+            </a>
+            <nav>
+                <a href="index.html">Your Map</a>
+                <img class="gps" src="image/gps.png" alt="map marker">
+                <a href="yourjournal.html">Your Journal</a>
+                <img class="journal" src="image/travel-journal.png" alt="journal">
+                <a href="yourmemories.html">Your Memories</a>
+                <img class="album" src="image/photo-al.png" alt="photo album">
+            </nav>
+        </header>
+    </div>
+    <div id="calenderTitle">
+        <h1>Your Journal</h1>
+    </div>
+
+    
+     <!-- Display the name of the current month -->
+     <div id="currentMonth"></div>
+
+     <div id="calendar">
+         <!-- Calendar will be generated dynamically using JavaScript -->
+     </div>
+ 
+     <div id="entryBox">
+         <textarea id="entryText" placeholder="Write your entry..."></textarea>
+         <button id="addEntry">Add Entry</button>
+         <button id="saveEntry">Save Entry</button>
+         <button id="editEntryBtn">Edit Entry</button>
+     </div>
+ 
+     <!-- Display entry for the selected day -->
+     <div id="displayEntry"></div>
+
+    <footer>
+        <p>The Map Journal &copy; 2023 - Michael Randall</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <img class="phone" src="image/phone-cont.png" alt="phone">
+        <div id="share">
+            <p>Share With Friends</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="image/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="image/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="image/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Dynamically create the calendar
+            const calendar = document.getElementById('calendar');
+            const currentMonth = document.getElementById('currentMonth');
+            const displayEntry = document.getElementById('displayEntry');
+            const editEntryBtn = document.getElementById('editEntryBtn');
+    
+            const months = [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+    
+            const today = new Date();
+            const currentMonthIndex = today.getMonth();
+            const currentYear = today.getFullYear();
+            const entries = new Array(31); // Array to store entries for each day
+    
+            currentMonth.textContent = months[currentMonthIndex] + ' ' + currentYear;
+    
+            for (let day = 1; day <= 31; day++) {
+                const dayElement = document.createElement('div');
+                dayElement.classList.add('day');
+                dayElement.textContent = day;
+                dayElement.addEventListener('click', function () {
+                    openEntryBox(day);
+                });
+                calendar.appendChild(dayElement);
+            }
+    
+            // Entry box functionality
+            const entryBox = document.getElementById('entryBox');
+            const entryText = document.getElementById('entryText');
+            const addEntryBtn = document.getElementById('addEntry');
+            const saveEntryBtn = document.getElementById('saveEntry');
+    
+            let selectedDay = null;
+    
+            function openEntryBox(day) {
+                // Display entry for the selected day
+                selectedDay = day;
+                displayEntry.textContent = entries[day - 1] || "No entry for this day";
+                displayEntry.style.display = 'block';
+    
+                // Display the Edit Entry button only if there's an entry
+                if (entries[day - 1]) {
+                    editEntryBtn.style.display = 'inline-block';
+                } else {
+                    editEntryBtn.style.display = 'none';
+                }
+    
+                // Logic to open entry box for the selected day
+                entryBox.style.display = 'block';
+                entryText.value = entries[day - 1] || ''; // Populate the textarea with existing entry
+                addEntryBtn.style.display = 'none';
+                saveEntryBtn.style.display = 'inline-block';
+            }
+    
+            addEntryBtn.addEventListener('click', function () {
+                // Logic to add entry
+                entryBox.style.display = 'block';
+                addEntryBtn.style.display = 'none';
+                saveEntryBtn.style.display = 'inline-block';
+            });
+    
+            saveEntryBtn.addEventListener('click', function () {
+                // Logic to save entry
+                if (selectedDay !== null) {
+                    entries[selectedDay - 1] = entryText.value; // Save entry to the array
+                    entryBox.style.display = 'none';
+                    addEntryBtn.style.display = 'inline-block';
+                    saveEntryBtn.style.display = 'none';
+                    editEntryBtn.style.display = 'inline-block';
+                }
+            });
+    
+            editEntryBtn.addEventListener('click', function () {
+                // Logic to edit entry
+                entryBox.style.display = 'block';
+                addEntryBtn.style.display = 'none';
+                saveEntryBtn.style.display = 'inline-block';
+                editEntryBtn.style.display = 'none';
+            });
+    
+            // Set the background image dynamically
+            const container = document.getElementById('container');
+            container.style.backgroundImage = 'url("image/wood-back.png")';
+            container.style.backgroundSize = 'cover';
+            container.style.backgroundPosition = 'center';
+            container.style.backgroundRepeat = 'no-repeat';
+            container.style.margin = '0';
+            container.style.padding = '0';
+        });
+    </script>
+    </body>
+    
+    </html>
+    
