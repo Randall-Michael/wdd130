@@ -14,12 +14,24 @@
                 <img class="logo" src="image/The-Map-Journal-logos.jpeg" alt="Map Journal Logo">
             </a>
             <nav>
-                <a href="index.html">Your Map</a>
-                <img class="gps" src="image/gps.png" alt="map marker">
-                <a href="yourjournal.html">Your Journal</a>
-                <img class="journal" src="image/travel-journal.png" alt="journal">
-                <a href="yourmemories.html">Your Memories</a>
-                <img class="album" src="image/photo-al.png" alt="photo album">
+                <div class="nav-item">
+                    <a href="index.html">
+                        <img class="nav-icon" src="image/gps.png" alt="map marker">
+                        <span>Your Map</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="yourjournal.html">
+                        <img class="nav-icon" src="image/travel-journal.png" alt="journal">
+                        <span>Your Journal</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="yourmemories.html">
+                        <img class="nav-icon" src="image/photo-al.png" alt="photo album">
+                        <span>Your Memories</span>
+                    </a>
+                </div>
             </nav>
         </header>
     </div>
@@ -33,26 +45,33 @@
     <button onclick="searchMarkers()">Search</button>
     <button onclick="addMarker()">Add Marker</button>
 
-    <footer>
-        <p>The Map Journal &copy; 2023 - Michael Randall</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <img class="phone" src="image/phone-cont.png" alt="phone">
+    <<footer>
+        <div class="footer-section">
+            <p>The Map Journal &copy; 2023 - Michael Randall</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+        </div>
+        <div class="footer-section">
+            <p><a href="contactus.html">Contact Us</a></p>
+            <img class="phone" src="image/phone-cont.png" alt="phone">
+        </div>
+        <div class="footer-section">
             <div id="share">
                 <p>Share With Friends</p>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="image/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="image/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="image/instagram.png" alt="instagram icon">
-            </a>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="image/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="image/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="image/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
+            </div>
         </div>
-     </div>
-            </footer>
+    </footer>
+    
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>

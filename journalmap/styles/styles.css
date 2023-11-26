@@ -1,43 +1,132 @@
-header {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 150px auto;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond&family=Playpen+Sans:wght@200&display=swap');
+body {
+    font-family: 'Playpen Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    background-color: #7CA797;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+}
+
 nav {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
-nav a { 
-    text-align: center;
-    color: #F5C10A;
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.nav-icon {
+    width: 50px; /* Adjust the size as needed */
+    margin-bottom: 5px; /* Space between icon and title */
+}
+
+nav a {
+    color: #F5C4BD;
     text-decoration: none;
-    padding: 35px;
- }  
- #logo_link {
-    padding-top: 5px;
-    justify-self: center;
+}
+
+nav span {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+
+#logo_link {
     align-self: center;
 }
+
 .logo {
- width: 80px;
+    width: 80px;
 }
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    max-height: 300px;
+#mapTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
+
+#mapTitle h1 {
+    margin: 0;
+}
+
 #map {
-    height: 1600px; /* Adjust the height as needed */
+    height: 600px;
     width: 100%;
     margin-top: 20px;
 }
+
+#searchInput {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #7d7d7d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #7CA797;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 33%;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section a {
+    color: #F5C10A;
+    text-decoration: none;
+}
+
+.phone {
+    width: 70px; /* Adjust the size as needed */
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social a {
+    margin: 0 5px;
+}
+
+
 
 /* Style the entry form */
 #entryForm {
     display: none;
     margin-top: 10px;
-}
+} 
 
 /*second page css
 <style>
