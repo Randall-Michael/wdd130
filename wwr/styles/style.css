@@ -216,6 +216,7 @@ nav a {
     grid-template-columns: 1fr;
  }
 #faq-img {
+    filter: blur(3px);
     height: 700px;
     width: 100%;
     z-index: -1;
