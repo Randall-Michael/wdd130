@@ -38,10 +38,13 @@ nav {
 nav a {
     color: #F5C4BD;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav span {
-    font-size: 12px; /* Adjust the font size as needed */
+    font-size: 24px; /* Adjust the font size as needed */
 }
 
 
@@ -50,7 +53,7 @@ nav span {
 }
 
 .logo {
-    width: 80px;
+    width: 150px;
 }
 #mapTitle {
     text-align: center;
@@ -62,7 +65,8 @@ nav span {
 }
 
 #mapTitle h1 {
-    margin: 0;
+    margin: 37px 0;
+    font-weight: bold;
 }
 
 #map {
@@ -72,8 +76,9 @@ nav span {
 }
 
 #searchInput {
+    margin: 20px;
     padding: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 button {
@@ -102,12 +107,12 @@ footer {
 }
 
 .footer-section a {
-    color: #F5C10A;
+    color: #F5C4BD;
     text-decoration: none;
 }
 
 .phone {
-    width: 70px; /* Adjust the size as needed */
+    width: 100px; /* Adjust the size as needed */
 }
 
 .social {
