@@ -124,50 +124,101 @@ footer {
 .social a {
     margin: 0 5px;
 }
-
-
-
 /* Style the entry form */
 #entryForm {
     display: none;
     margin-top: 10px;
 } 
 
-/*second page css
-<style>
-        body {
-            background-image: url('path/to/your/image.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0; /* Reset body margin to avoid extra spacing 
-            padding: 0;  Reset body padding to avoid extra spacing 
-        }
-
-        #container {
-            position: relative;
-        }
-        #calendar {
-    margin: 20px auto;
+/*second page css*/
+body {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /*Reset body margin to avoid extra spacing*/
+    padding: 0;  /*Reset body padding to avoid extra spacing*/
+}
+header {
+    background-color: #7CA797;
+    color: white;
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-image: url('mage/wood-back.png'); 
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+.nav-icon {
+    width: 50px; /* Adjust the size as needed */
+    margin-bottom: 5px; /* Space between icon and title */
+}
+nav a {
+    color: #F5C4BD;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav span {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+#logo_link {
+    align-self: center;
+}
+.logo {
+    width: 150px;
+}
+#calendarTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#calendarTitle h1 {
+    margin: 37px 0;
+    font-weight: bold;
+}
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+#content {
+    margin: 0 auto;
+    padding: 20px;
+}
+#calendar {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    background-image: url('mage/wood-back.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 .day {
-    width: 100px;
+    width: 100%; /* Adjust the width as needed */
     text-align: center;
     margin: 5px;
     padding: 10px;
     border: 1px solid #ccc;
     cursor: pointer;
 }
-
 #entryBox {
     display: none;
     margin: 20px auto;
@@ -189,12 +240,46 @@ footer {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+footer {
+    background-color: #7CA797;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
 
+.footer-section {
+    width: 33%;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section a {
+    color: #F5C4BD;
+    text-decoration: none;
+}
+
+.phone {
+    width: 100px; /* Adjust the size as needed */
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social a {
+    margin: 0 5px;
+}
 #displayEntry {
     margin: 20px auto;
     max-width: 400px;
     display: none;
-}*/
+}
 /*thrid page css starts here
   #photoAlbum {
             text-align: center;
