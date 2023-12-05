@@ -280,7 +280,7 @@ footer {
     max-width: 400px;
     display: none;
 }
-/*thrid page css starts here
+/*thrid page css starts here*/
   #photoAlbum {
             text-align: center;
             margin-top: 20px;
@@ -294,10 +294,10 @@ footer {
         }
 
         #previewContainer img {
-            max-width: calc(33.33% - 10px); /* Adjust the width as needed 
+            max-width: calc(33.33% - 10px); /* Adjust the width as needed*/ 
             max-height: 150px;
             object-fit: cover;
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-bottom: 10px;
-        }*/
+        }
