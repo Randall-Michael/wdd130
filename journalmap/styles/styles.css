@@ -281,23 +281,81 @@ footer {
     display: none;
 }
 /*thrid page css starts here*/
-  #photoAlbum {
-            text-align: center;
-            margin-top: 20px;
-        }
+#photoTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#photoTitle h1 {
+    margin: 37px 0;
+    font-weight: bold;
+}
+#previewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+#previewContainer img {
+    max-width: calc(33.33% - 10px); /* Adjust the width as needed*/ 
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#photoContainer {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 40px;
+    border: 2px solid #ccc;
+    text-align: center;
+    background-color: #F5C4BD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        #previewContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
+#photoInput {
+    margin-top: 10px;
+}
 
-        #previewContainer img {
-            max-width: calc(33.33% - 10px); /* Adjust the width as needed*/ 
-            max-height: 150px;
-            object-fit: cover;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
+.photoRow {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.photoPreview {
+    max-width: 100%; /* Adjust the width as needed */
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.photoCaption {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    overflow: hidden;
+    transition: height 0.3s ease; /* Optional: Add a smooth transition effect */
+    height: 30px; /* Set an initial height, adjust as needed */
+}
+
+.photoCaption input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    box-shadow: none;
+    resize: none;
+}
+

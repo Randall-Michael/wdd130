@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Your Memories</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     
 </head>
 <body>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="image/The-Map-Journal-logos.jpeg" alt="Map Journal Logo">
+                <img class="logo" src="image/The-Map-Journl-logo.png" alt="Map Journal Logo">
             </a>
             <nav>
-                <a href="index.html">Your Map</a>
-                <img class="gps" src="image/gps.png" alt="map marker">
-                <a href="yourjournal.html">Your Journal</a>
-                <img class="journal" src="image/travel-journal.png" alt="journal">
-                <a href="yourmemories.html">Your Memories</a>
-                <img class="album" src="image/photo-al.png" alt="photo album">
+                <div class="nav-item">
+                    <a href="index.html">
+                        <img class="nav-icon" src="image/gps.png" alt="map marker">
+                        <span>Your Map</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="yourjournal.html">
+                        <img class="nav-icon" src="image/travel-journal.png" alt="journal">
+                        <span>Your Journal</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="yourmemories.html">
+                        <img class="nav-icon" src="image/photo-al.png" alt="photo album">
+                        <span>Your Memories</span>
+                    </a>
+                </div>
             </nav>
         </header>
     </div>
@@ -28,34 +39,42 @@
     <div id="photoTitle">
         <h1>Your Memories</h1>
     </div>
-   
-    <div id="photoAlbum">
+
+    <div id="photoContainer">
+        <!-- Colored box to contain the photos -->
         <!-- Input element for selecting photos -->
-        <input type="file" id="photoInput" accept="image/*" multiple>
         <div id="previewContainer"></div>
+        <input type="file" id="photoInput" accept="image/*" multiple>
     </div>
 
-    <footer>
-        <p>The Map Journal &copy; 2023 - Michael Randall</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <img class="phone" src="image/phone-cont.png" alt="phone">
-        <div id="share">
-            <p>Share With Friends</p>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="image/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="image/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="image/instagram.png" alt="instagram icon">
-                </a>
+
+    <<footer>
+        <div class="footer-section">
+            <p>The Map Journal &copy; 2023 - Michael Randall</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+        </div>
+        <div class="footer-section">
+            <p><a href="contactus.html">Contact Us</a></p>
+            <img class="phone" src="image/phone-cont.png" alt="phone">
+        </div>
+        <div class="footer-section">
+            <div id="share">
+                <p>Share With Friends</p>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="image/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="image/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="image/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script>src="page3.js"</script>
+    <script src="page3.js"></script>
 </body>
 </html>
