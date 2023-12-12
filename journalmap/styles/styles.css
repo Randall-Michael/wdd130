@@ -47,14 +47,10 @@ nav span {
     font-size: 24px; /* Adjust the font size as needed */
 }
 
-
 #logo_link {
     align-self: center;
 }
 
-.logo {
-    width: 150px;
-}
 #mapTitle {
     text-align: center;
     display: flex;
