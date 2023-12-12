@@ -203,12 +203,12 @@ nav span {
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 50px;
     background-image: url('mage/wood-back.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 70px;
     border-radius: 10px;
 }
 .day {
@@ -281,6 +281,10 @@ footer {
     display: none;
 }
 /*thrid page css starts here*/
+body {
+    min-height: 100vh; /* Minimum height of the viewport */
+    margin: 0;
+}
 #photoTitle {
     text-align: center;
     display: flex;
@@ -358,4 +362,6 @@ footer {
     box-shadow: none;
     resize: none;
 }
-
+footer {
+    margin-top: 100px; /* Push the footer to the bottom */
+}
